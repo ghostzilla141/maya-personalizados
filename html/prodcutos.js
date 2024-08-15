@@ -1,7 +1,7 @@
 // Obtén todos los botones "Agregar al Carrito"
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 
-// Agrega un event listener a cada botón
+
 addToCartButtons.forEach(button => {
     button.addEventListener('click', addToCartClicked);
 });
@@ -12,7 +12,7 @@ function addToCartClicked(event) {
     event.preventDefault();
     console.log(productName, productPrice, productImage)
 
-    // Obtén el producto al que se le hizo clic
+
     const productItem = event.target.closest('.product-item');
     const productName = productItem.dataset.name;
     const productPrice = productItem.querySelector('.price').textContent;
@@ -29,7 +29,6 @@ function addProductToCart(name, price, image) {
     let cartItems = localStorage.getItem('cartItems');
     cartItems = cartItems ? JSON.parse(cartItems) : [];
 
-    // Verifica si el producto ya está en el carrito
     const existingProduct = cartItems.find(item => item.name === name);
 
     if (existingProduct) {
