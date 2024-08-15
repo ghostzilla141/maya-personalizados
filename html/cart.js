@@ -84,8 +84,8 @@ function decreaseQuantity(event) {
     } else {
         // Si la cantidad es 1, pregunta si desea eliminar el producto
         if (confirm("¿Desea eliminar el producto del carrito?")) {
-            removeItem(event); // Llama a la función removeItem para eliminar el producto
-            return; // Sale de la función para evitar actualizar la cantidad a 0
+            removeItem(event); 
+            return;
         }
     }
 
