@@ -1,0 +1,199 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para el header */
+header {
+    background-color:#42D6C0;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    display: inline-block;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.search-bar {
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.user-icons {
+    margin-right: 20px;
+}
+
+.user-icons a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Estilos para el banner principal */
+.main-banner {
+    position: relative;
+    text-align: center;
+}
+
+.main-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8), 
+                 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la sección "Quiénes somos" */
+.about-us {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-info ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-bar {
+    position: fixed; 
+    top: 50%; 
+    left: 20px; 
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column;
+}
+
+.social-bar a {
+    display: block;
+    margin-bottom: 10px; 
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.social-bar a i { 
+    font-size: 30px; 
+    color: #333; 
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.social-bar a:hover i { 
+    color: #007bff; 
+}
+
+
