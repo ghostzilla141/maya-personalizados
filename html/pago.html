@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Mi Tienda de Sublimados</title>
+    <link rel="stylesheet" href="pago.css">
+</head>
+<body>
+    <!-- Header (igual que en la página de inicio) -->
+    <header>
+        <div class="logo">Mi Tienda</div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+        </div>
+        <div class="user-icons">
+            <a href="#">Cuenta</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="checkout-page">
+        <div class="container">
+            <section class="checkout-form">
+                <h1>Checkout</h1>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Dirección:</label>
+                        <textarea id="address" name="address" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </form>
+            </section>
+
+            <section class="shipping-methods">
+                <h2>Métodos de Envío</h2>
+                <div class="method">
+                    <input type="radio" id="standard" name="shipping" value="standard" checked>
+                    <label for="standard">Envío Estándar ($5.00)</label>
+                </div>
+                <div class="method">
+                    <input type="radio" id="express" name="shipping" value="express">
+                    <label for="express">Envío Express ($10.00)</label>
+                </div>
+            </section>
+
+            <section class="payment-methods">
+                <h2>Métodos de Pago</h2>
+                <div class="method">
+                    <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+                    <label for="credit-card">Tarjeta de Crédito</label>
+                </div>
+                <div class="method">
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+                <div class="method">
+                    <input type="radio" id="other" name="payment" value="other">
+                    <label for="other">Otros Métodos</label>
+                </div>
+            </section>
+
+            <section class="order-review">
+                <h2>Revisión del Pedido</h2>
+                <div class="summary-item">
+                    <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                    <p>Envío: <span id="shipping-cost">$5.00</span></p>
+                    <p>Total: <span id="total">$5.00</span></p>
+                </div>
+                <button type="submit" form="checkout-form" class="confirm-btn">Confirmar Pago</button>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer (igual que en la página de inicio) -->
+    <footer>
+        <div class="footer-info">
+            <p>Información de contacto</p>
+            <ul>
+                <li>Dirección: Dirección de la tienda</li>
+                <li>Teléfono: +123456789</li>
+                <li>Email: info@mitienda.com</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="terminos.html">Política de privacidad</a></li>
+                <li><a href="terminos.html">Términos y condiciones</a></li>
+            </ul>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/mayacreart1"target= "_blank" class="icon-facebook"></a>
+            <a href="#"target= "_blank" class="icon-twitter"></a>
+            <a href="#"target= "_blank" class="icon-instagram"></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript para la funcionalidad del checkout (opcional) -->
+    <!-- Puedes incluir aquí tu archivo de JavaScript si necesitas alguna funcionalidad adicional -->
+
+</body>
+</html>
